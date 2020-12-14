@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: achra
+Build-Jdk: 11.0.8
+Implementation-Title: spring-boot-data-jwt
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.bolsadeideas.springboot.jwt.app
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/spring-boot-data-jwt
+Created-By: Maven Integration for Eclipse
+
