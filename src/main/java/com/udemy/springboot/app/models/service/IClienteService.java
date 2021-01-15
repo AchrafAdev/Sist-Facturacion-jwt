@@ -14,8 +14,6 @@ public interface IClienteService {
 
 	public List<Cliente> findAll();
 	
-	public Page<Cliente> findAll(Pageable pageable);
-	
 	public void save(Cliente cliente);
 	
 	public Cliente saveApi(Cliente cliente);

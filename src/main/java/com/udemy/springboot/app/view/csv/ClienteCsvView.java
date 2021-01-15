@@ -1,12 +1,12 @@
 package com.udemy.springboot.app.view.csv;
 
 
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.view.AbstractView;
 import org.supercsv.io.CsvBeanWriter;
@@ -38,7 +38,9 @@ public class ClienteCsvView extends AbstractView {
 		response.setContentType(getContentType());
 
 		
-		List<Cliente> clientes = (List<Cliente>) model.get("clientes");
+		//List<Cliente> clientes = (List<Cliente>) model.get("clientes");
+		
+		Page<Cliente> clientes = (Page<Cliente>) model.get("clientes");
 		
 		ICsvBeanWriter beanWriter = new CsvBeanWriter(response.getWriter(),  CsvPreference.STANDARD_PREFERENCE);
 		
